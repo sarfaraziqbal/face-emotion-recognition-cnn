@@ -12,7 +12,9 @@ streamlit-webrtc
 The dataset which I used was the FER2013 dataset from kaggle. You can download the dataset from the link below and copy paste the dataset in the folder. https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 
 
-In the output layer there were 7 nodes. This model was used to predict emotion in following ways:
+![name-of-you-image](https://raw.githubusercontent.com/shreyasah99/Shreyas-Deep-Learning-Capstone-Face-Emotion-Recognition/main/Structure%20of%20model.png)
+
+This was the model structure. In the output layer there were 7 nodes. This model was used to predict emotion in following ways:
 
 1. First, the haar cascade method is used to detect faces in each frame of the webcam feed.
 2. The region of image containing the face is resized to 48x48 and is passed as input to the CNN.
