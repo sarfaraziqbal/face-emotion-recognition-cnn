@@ -27,3 +27,8 @@ Then we made frontend of the model on streamlit these models on heroku cloud as 
 Link of repository containing streamlit code: https://github.com/sarfaraziqbal/face-emotion-recognition-cnn/
 
 Link of our model that's deployed on heroku: https://model37.herokuapp.com/
+
+# Deployment
+In this repository we have made a front end using streamlit. Streamlit doesn’t provide the live capture feature itself, instead uses a third party API. We used streamlit-webrtc which helped to deal with real-time video streams. Image captured from the webcam is sent to VideoTransformer function to detect the emotion.
+
+Then this model was deployed on heroku platform with the help of buildpack-apt which is necessary to deploy opencv model on heroku. But heroku platform only allows model size as 500 mb. And tensorflow 2.0 itself takes 420 mb so we replaced it with tensorflow-cpu. All the other packages used and their version can be found in requirements.txt . Our final model was of 414 mb and it was successfully deployed but the live stream itself takes max. of 300 mb while loading live-stream or opening the webcam. And hence the webcam is loading but not capturing the faces so, our model was not giving expected output.
