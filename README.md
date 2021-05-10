@@ -4,7 +4,8 @@ We have built a deep learning model which detects the real time emotions of stud
 
 # Dependencies
 
-Python 3, OpenCV, Tensorflow
+Python 3, OpenCV, Tensorflow, 
+streamlit-webrtc
 
 # Explanation
 
