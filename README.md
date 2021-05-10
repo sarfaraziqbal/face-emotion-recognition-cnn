@@ -6,7 +6,7 @@ We have built a deep learning model which detects the real time emotions of stud
 
 Python 3, OpenCV, Tensorflow
 
-# Model Explanation
+# Explanation
 
 The dataset which I used was the FER2013 dataset from kaggle. You can download the dataset from the link below and copy paste the dataset in the folder. https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 
