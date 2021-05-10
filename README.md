@@ -27,7 +27,8 @@ The model which my friend Apoorva made was with the help of transfer learning an
 Then we made frontend of the model on streamlit these models on heroku cloud as well.
 
 Link of repository containing streamlit code: https://github.com/sarfaraziqbal/face-emotion-recognition-cnn/
-dataset -- https://www.kaggle.com/gauravsharma99/fer13-cleaned-dataset
+
+dataset of model which we used -- https://www.kaggle.com/gauravsharma99/fer13-cleaned-dataset
 
 
 # Deployment
