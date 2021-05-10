@@ -21,17 +21,18 @@ This was the model structure. In the output layer there were 7 nodes. This model
 4. The emotion with maximum score is displayed on the screen.
 4. This model gave a training accuracy of 66.47 and validation accuracy of 58.19 after 42 epocs.
 
-The model which my friend Apoorva made was with the help of transfer learning and she got training accuracy of 79.42 with validation accuracy of 75.94 at just 30 epocs, but was having an issue of memory i.e. slug size and was getting application error during deployment so we decided to change the model. You can access the code for her model from the below github link: https://github.com/Apoorva2399/Real-Time-Face-Emotion-Recogniton
+The model which my friend Apoorva made was with the help of transfer learning and she got training accuracy of 79.42 with validation accuracy of 75.94 at just 30 epocs, but was having an issue of memory i.e. slug size and got application error during deployment but was deployed succesfully. You can access the code for her model from the below github link: https://github.com/Apoorva2399/Real-Time-Face-Emotion-Recogniton
 
-Link of her deployed model: https://real-time-emotion-recognition.herokuapp.com/
 
 Then we made frontend of the model on streamlit these models on heroku cloud as well.
 
 Link of repository containing streamlit code: https://github.com/sarfaraziqbal/face-emotion-recognition-cnn/
+dataset -- https://www.kaggle.com/gauravsharma99/fer13-cleaned-dataset
 
-Link of my model that's deployed on heroku: https://model37.herokuapp.com/
 
 # Deployment
 In this repository we have made a front end using streamlit. Streamlit doesn’t provide the live capture feature itself, instead uses a third party API. We used streamlit-webrtc which helped to deal with real-time video streams. Image captured from the webcam is sent to VideoTransformer function to detect the emotion.
 
 Then this model was deployed on heroku platform with the help of buildpack-apt which is necessary to deploy opencv model on heroku. But heroku platform only allows model size as 500 mb. And tensorflow 2.0 itself takes 420 mb so we replaced it with tensorflow-cpu. All the other packages used and their version can be found in requirements.txt . Our final model was of 414 mb and it was successfully deployed but the live stream itself takes max. of 300 mb while loading live-stream or opening the webcam. And hence the webcam is loading but not capturing the faces so, our model was not giving expected output.
+
+Link of my model that's deployed on heroku: https://model37.herokuapp.com/
