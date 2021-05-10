@@ -21,13 +21,15 @@ This was the model structure. In the output layer there were 7 nodes. This model
 4. The emotion with maximum score is displayed on the screen.
 4. This model gave a training accuracy of 66.47 and validation accuracy of 58.19 after 42 epocs.
 
-The model which my friend Apoorva made was with the help of transfer learning and she got training accuracy of approximately 80 and validation accuracy of 70, but was having an issue of memory i.e. slug size and was getting application error during deployment so we decided to drop her model for further process and included mine to atleast start the prediction, we'll further change the code of transfer's learning model and will update here. You can access the code for her model from the below github link: https://github.com/Apoorva2399/Real-Time-Face-Emotion-Recogniton
+The model which my friend Apoorva made was with the help of transfer learning and she got training accuracy of 79.42 with validation accuracy of 75.94 at just 30 epocs, but was having an issue of memory i.e. slug size and was getting application error during deployment so we decided to change the model. You can access the code for her model from the below github link: https://github.com/Apoorva2399/Real-Time-Face-Emotion-Recogniton
+
+Link of her deployed model: https://real-time-emotion-recognition.herokuapp.com/
 
 Then we made frontend of the model on streamlit these models on heroku cloud as well.
 
 Link of repository containing streamlit code: https://github.com/sarfaraziqbal/face-emotion-recognition-cnn/
 
-Link of our model that's deployed on heroku: https://model37.herokuapp.com/
+Link of my model that's deployed on heroku: https://model37.herokuapp.com/
 
 # Deployment
 In this repository we have made a front end using streamlit. Streamlit doesn’t provide the live capture feature itself, instead uses a third party API. We used streamlit-webrtc which helped to deal with real-time video streams. Image captured from the webcam is sent to VideoTransformer function to detect the emotion.
