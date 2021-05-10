@@ -18,7 +18,7 @@ This was the model structure. In the output layer there were 7 nodes. This model
 2. The region of image containing the face is resized to 48x48 and is passed as input to the CNN.
 3. The network outputs a list of softmax scores for the seven classes of emotions.
 4. The emotion with maximum score is displayed on the screen.
-4. This model gave a training accuracy of 66.47 and validation accuracy of 58.19.
+4. This model gave a training accuracy of 66.47 and validation accuracy of 58.19 after 42 epocs.
 
 The model which my friend Apoorva made was with the help of transfer learning and she got an accuracy of 70, hence we decided that further projects i.e. frontend and deployment will be done on her model. You can access the code for her model from the below github link: https://github.com/Apoorva2399/Real-Time-Face-Emotion-Recogniton
 
